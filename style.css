@@ -1,0 +1,382 @@
+/*
+Theme Name: 4uniformes
+Theme URI:
+Author:  4media Agencia de Comunicação - Devel:Thiago Mendes
+Author URI: http://4media.com.br/
+Description: Thema desenvolvido por Thiago Mendes junto a 4media
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Bootstrap,HTML, CSS
+Text Domain: Restaurante paladino
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700);
+
+body{
+  font-family: 'Open Sans', sans-serif !important;
+  color: #646665 !important;
+}
+
+.navbar{
+  border-bottom: 0px !important;
+}
+
+.interno{
+  min-height: 600px;
+  padding-bottom: 30px;
+}
+
+.btn-buscatop{
+  background-color: #333;
+  color:#ccc;
+  border: #000 solid 1px;
+}
+
+.topo-titulo{
+  background:url('images/div_menu.jpg') center bottom no-repeat #000;
+  padding: 45px 0;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+
+.pull-right #breadcrumbs{
+  font-size: 13px;
+  padding: 20px 0 0;
+  color: #c2272c;
+}
+
+.pull-right #breadcrumbs a{
+  color: #646665 !important;
+}
+
+.pull-right #breadcrumbs a:hover{
+  color: #c2272c;
+}
+
+.topo-titulo h1{
+  color: #fff;
+  margin: 0px;
+}
+
+.entrega-frete{
+  text-align: center;
+  font-weight: bold;
+  padding: 35px 0;
+}
+
+.titulo-home{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.topo-site{
+  padding: 20px 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.topo-site .fatop, .topo-site img{
+  margin-left: 20px;
+}
+
+.pre-produtos{
+  padding: 35px 0px;
+}
+
+.section-tecnologia .col-md-6,
+.section-tecnologia .col-md-5,
+.section-tecnologia .col-md-7{
+  padding: 0px;
+}
+
+.section-tecnologia img{
+  width: 100%;
+}
+
+.bloco-noticia{
+  margin-bottom: 20px;
+}
+
+.conteudo-noticia{
+  padding: 20px 0;
+}
+
+.form-control,.btn{
+  border-radius: 0px !important;
+}
+
+.bloco-noticia h2 a{
+  color:  #c2272c;
+}
+
+.bloco-noticia h2 a:hover{
+  color: #333333;
+  text-decoration: none;
+}
+
+.info-adicional{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom:  #333333 solid 1px;
+}
+
+.info-block{
+  padding: 6px 8px;
+}
+
+.calendario{
+  background: #333333;
+  color: #fff;
+}
+
+.btn-4uniformes{
+  background: #333333;
+  color: #fff;
+  border-radius: 0px !important;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition-duration: 0.3s;
+  border: #d5d5d5 solid 1px;
+}
+
+.btn-4uniformes1{
+  background: #333;
+  color: #fff;
+  border-radius: 0px !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 19px !important;
+  transition-duration: 0.3s;
+  border: #d5d5d5 solid 1px;
+}
+
+.btn-4uniformes:hover, .btn-4uniformes1:hover{
+  background-color: #c2272c;
+  color: #fff !important;
+}
+
+.bg-clientes{
+  padding: 35px 0px;
+}
+
+/****** PAGINA DE PRODUTOS */
+.titulo-produto{
+  margin-top: 0px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+}
+
+.titulo-descricao{
+  border-bottom: #ccc solid 1px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  color: #000;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.desc-block{
+  border-bottom: #ccc solid 1px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.itemcor{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+.btn-orcamento{
+  color: #fff;
+  border:#c2272c solid 2px;
+  background-color: #c2272c;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  border-radius: 0px;
+  font-size: 18px;
+}
+
+.btn-orcamento:hover{
+  background-color: #333;
+  color: #fff;
+}
+
+.img-produto{
+  height: 268px;
+  overflow: hidden;
+  border: #d5d5d5 solid 1px;
+}
+
+.grid-produto{
+  margin-bottom: 30px;
+}
+
+.slider-for{
+  height: 400px;
+  text-align: center;
+}
+
+.slider-for .slick-track{
+  height: 400px;
+}
+
+.slider-for .slick-track img{
+  height: 100%;
+  border:#d5d5d5 solid 1px;
+}
+
+.desc-curta{
+  padding: 25px 0px;
+  min-height: 200px;
+}
+
+/****************** /FINAL PRODUTOS **************/
+
+.logos .slick-track{
+  height: 223px;
+}
+
+/* MENU LATERAL */
+.menu-lateral ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.menu-lateral ul li{
+  border-bottom: #fff solid 1px;
+  margin-bottom: 10px;
+}
+
+.menu-lateral ul li:last-child{
+  border-bottom: #fff solid 1px;
+}
+
+.menu-lateral ul li a{
+  color: #000;
+  text-transform: uppercase;
+  display: block;
+  padding: 0px 10px;
+  font-weight: bold;
+  border-left: #c2272c solid 2px;
+  font-size: 20px;
+}
+
+.menu-lateral ul li a:hover{
+  text-decoration: none;
+}
+
+.menu-lateral ul ul{
+  margin: 10px 0;
+}
+
+.menu-lateral ul ul li{
+  border-bottom: #fff solid 1px;
+  margin-bottom: 0px;
+}
+
+.menu-lateral ul ul li a{
+  color: #919191;
+  font-weight: 300;
+  border-left: #fff solid 2px;
+  font-size: 14px;
+  padding: 6px 0px;
+}
+
+.menu-lateral ul ul li a:hover{
+  color: #c2272c;
+  text-decoration: none;
+}
+
+/* menu footer */
+footer{
+  padding: 15px 0;
+  background: #171717;
+  color: #646665;
+}
+
+footer h3{
+  margin: 10px 0px 15px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+footer h4{
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #646665;
+}
+
+footer ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+footer ul li a{
+  color: #ccc;
+  display: block;
+  padding: 3px 0;
+}
+
+footer ul li a:hover{
+  color: #fff ;
+  text-decoration: none;
+}
+
+.logo-footer{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.mapasite a{
+  font-weight: bold;
+  color: #646665;
+}
+
+.menu-footer{
+  text-transform: uppercase;
+  padding-top: 7px;
+}
+
+/* menu */
+.navbar{
+  margin-bottom: 0px !important;
+}
+
+.navbar-4uniformes{
+  background-color: #c2272c;
+  border-radius: 0px !important;
+}
+
+.navbar-brand{
+  height: auto !important;
+}
+
+.navbar-4uniformes .navbar-nav > li > a{
+  color: #fff;
+  padding: 20px 15px;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+}
+
+.navbar-4uniformes .navbar-nav > li > a:hover,
+.navbar-4uniformes .navbar-nav > li > a:focus,
+.navbar-4uniformes .navbar-nav > li.active > a{
+  background-color: #000;
+}
