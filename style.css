@@ -226,6 +226,7 @@ body{
   margin-bottom: 30px;
 }
 
+/*
 .slider-for{
   height: 400px;
   text-align: center;
@@ -236,8 +237,25 @@ body{
 }
 
 .slider-for .slick-track img{
-  height: 100%;
+  /*height: 100%;*
   border:#d5d5d5 solid 1px;
+}
+*/
+
+.panel-heading{
+  background: #000;
+  color: #fff;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.panel-bos a{
+  color: #000;
+}
+
+.panel-bos a:hover{
+  color: #c2272c;
 }
 
 .desc-curta{
@@ -298,7 +316,8 @@ body{
   padding: 6px 0px;
 }
 
-.menu-lateral ul ul li a:hover{
+.menu-lateral ul ul li a:hover,
+.menu-lateral ul ul li.activate_Lateral a{
   color: #c2272c;
   text-decoration: none;
 }

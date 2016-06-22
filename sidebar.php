@@ -3,15 +3,15 @@
 	  <div class="form-group">
 	      <input type="text" name="s" id="s" class="form-control" placeholder="Pesquisar...">
 	  </div>
-	  <button class="btn-block btn btn-paladino" type="submit"><i class="fa fa-search"></i> Pesquisar</button>
+	  <button class="btn-block btn btn-4uniformes1" type="submit"><i class="fa fa-search"></i> Pesquisar</button>
   </form>
 </div>
 
 <div class="clearfix"></div>
-<?php 
+<?php
 // Inserindo uma área de Widgets
 if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Lateral') ) :?>
-  <p>Gerencie seus Widgets pelo painel administrativo do Wordpress.</p>      
-<?php 
-endif; 
+  <p>Gerencie seus Widgets pelo painel administrativo do Wordpress.</p>
+<?php
+endif;
 ?>

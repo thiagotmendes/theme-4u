@@ -6,8 +6,9 @@
           <h1 class="pull-left">
             <?php
               $titulo = get_the_terms($post->ID,'categoria-Produto');
-              //var_dump($titulo);
-              echo $titulo[0]->name;
+              $titulo_certo = $titulo[0]->name;
+              echo $titulo_certo;
+
             ?>
           </h1>
           <div class="pull-right">
@@ -27,7 +28,7 @@
             <div class="col-md-4">
               <div class="menu-lateral">
                 <?php
-                  print_produtos_e_filhos('categoria-Produto');
+                  print_produtos_e_filhos('categoria-Produto',$titulo_certo);
                 ?>
               </div>
             </div>

@@ -1,5 +1,6 @@
 <?php
-function print_produtos_e_filhos( $tax_name ) {
+
+function print_produtos_e_filhos( $tax_name,$compareTax ) {
     $cats = get_terms( $tax_name, [ 'parent' => 0, 'hide_empty' => true ] );
     echo '<ul>';
     foreach ( $cats as $cat ):
@@ -11,7 +12,7 @@ function print_produtos_e_filhos( $tax_name ) {
                         <?php echo $cat->name; ?>
                     </a>
                 </span>
-                <?php render_children( $cat ); ?>
+                <?php render_children( $cat,$compareTax ); ?>
             </li>
 
         <?php
@@ -20,12 +21,17 @@ function print_produtos_e_filhos( $tax_name ) {
     echo '</ul>';
   }
 
-  function render_children( $parent ) {
+  function render_children( $parent, $compareTax ) {
     $children = get_terms( $parent->taxonomy, [ 'parent' => $parent->term_id, 'hide_empty' => true ] );
     echo '<ul class="ul-submenu">';
     foreach ( $children as $kid ):
         ?>
-        <li class="elementos-cat li-submenu">
+        <?php if ($compareTax == $kid->name): ?>
+          <?php $activate = "activate_Lateral" ?>
+        <?php else: ?>
+          <?php $activate = "" ?>
+        <?php endif; ?>
+        <li class="elementos-cat li-submenu <?php echo $activate ?>">
             <a href="<?php echo get_term_link( $kid ); ?>">
               + <?php echo $kid->name; ?>
             </a>

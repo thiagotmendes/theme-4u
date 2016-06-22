@@ -49,10 +49,14 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <img src="<?php echo get_template_directory_uri() ?>/images/box_tecnologia.jpg" alt="" class="img-responsive" />
+            <a href="http://4uniformes.com.br/tecnologia/ ">
+              <img src="<?php echo get_template_directory_uri() ?>/images/box_tecnologia.jpg" alt="" class="img-responsive" />
+            </a>
           </div>
           <div class="col-md-5">
-            <img src="<?php echo get_template_directory_uri() ?>/images/box_personalise.jpg" alt="" class="img-responsive" />
+            <a href="http://4uniformes.com.br/personalize-com-sua-marca/ ">
+              <img src="<?php echo get_template_directory_uri() ?>/images/box_personalise.jpg" alt="" class="img-responsive" />
+            </a>
           </div>
         </div>
       </div>
